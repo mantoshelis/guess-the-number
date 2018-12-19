@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settingsConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:theme="@style/Theme.AppCompat"
+    tools:context=".activity.SettingsActivity">
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/soundCheckBox"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="284dp"
+        android:layout_marginEnd="32dp"
+        android:buttonTint="#4c5b61"
+        android:enabled="true"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/soundCheckBoxLabel"
+        android:textColor="#4c5b61"
+        android:textColorHint="#4c5b61"
+        android:textColorLink="#4c5b61"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/settingsSaveButton"
+        android:layout_width="341dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="364dp"
+        android:layout_marginEnd="8dp"
+        android:background="#b3e1e1"
+        android:clickable="false"
+        android:enabled="false"
+        android:fontFamily="@font/montserrat"
+        android:onClick="onSaveButtonClick"
+        android:text="@string/saveButtonLabel"
+        android:textColor="#4c5b61"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/nicknameWrapper"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#4c5b61"
+        android:textColorHint="#4c5b61"
+        app:counterTextAppearance="@style/TextInputAppearance"
+        app:hintTextAppearance="@style/TextInputAppearance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/nicknameInput"
+            android:layout_width="341dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#4c5b61"
+            android:hint="@string/nicknameHint"
+            android:inputType="text"
+            android:textColor="#4c5b61"
+            android:textColorHighlight="#4c5b61"
+            android:textColorHint="#4c5b61"
+            android:textColorLink="#4c5b61" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ageWrapper"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#4c5b61"
+        android:textColorHint="#4c5b61"
+        app:counterTextAppearance="@style/TextInputAppearance"
+        app:hintTextAppearance="@style/TextInputAppearance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/ageInput"
+            android:layout_width="341dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4c5b61"
+            android:hint="@string/ageHint"
+            android:inputType="number"
+            android:textColor="#4c5b61"
+            android:textColorHighlight="#4c5b61"
+            android:textColorHint="#4c5b61"
+            android:textColorLink="#4c5b61" />
+    </android.support.design.widget.TextInputLayout>
+</android.support.constraint.ConstraintLayout>
